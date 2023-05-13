@@ -7,16 +7,20 @@ const instrumentSerif = Instrument_Serif({subsets: ["latin"], weight: ["400"]});
 export const metadata = {
   title: "Dolar Cotizaciones",
   description: "Exchange-rate, Dolar, Peso argentino",
+  imageUrl:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Earth_from_Space.jpg/240px-Earth_from_Space.jpg",
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <Head>
-        <meta
-          content="https://avatars.githubusercontent.com/u/35840156?s=280&v=4"
-          property="og:image"
-        />
+        {metadata.imageUrl ? (
+          <>
+            <meta content={metadata.imageUrl} property="og:image" />
+            <meta content={metadata.imageUrl} name="twitter:image" />
+          </>
+        ) : null}
       </Head>
       <body className={instrumentSerif.className}>
         <main className="flex h-screen items-center sm:items-center sm:justify-center">
