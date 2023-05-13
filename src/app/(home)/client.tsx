@@ -25,13 +25,13 @@ export default function HomeClient({cotizaciones}: {cotizaciones: Cotizacion[]})
                 <div className="flex items-center gap-4">
                   {amount ? (
                     <div className="flex flex-col items-end ">
-                      <div className="text-sm font-bold text-emerald-300">
+                      <div className="text-sm font-bold text-textnumbers">
                         {Number(venta).toLocaleString("es-AR", {
                           style: "currency",
                           currency: "ARS",
                         })}
                       </div>
-                      <div className="text-2xl font-bold text-emerald-500">
+                      <div className="text-2xl font-bold text-textnumbers">
                         {Number(total).toLocaleString("es-AR", {
                           style: "currency",
                           currency: "ARS",
@@ -39,7 +39,7 @@ export default function HomeClient({cotizaciones}: {cotizaciones: Cotizacion[]})
                       </div>
                     </div>
                   ) : (
-                    <div className="text-3xl font-bold text-emerald-300 ">
+                    <div className="text-3xl font-bold text-textnumbers ">
                       {Number(venta).toLocaleString("es-AR", {
                         style: "currency",
                         currency: "ARS",

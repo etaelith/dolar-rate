@@ -13,8 +13,11 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     <html lang="en">
       <body className={inter.className}>
         <main className="flex h-screen items-center justify-center ">
-          <div className="m-auto max-w-screen-md flex-1 h-full max-h-96">
-            <div className="h-full w-full rounded-3xl bg-white p-8 shadow-2xl text-white">
+          <div className="m-auto max-w-screen-md flex-1 h-full max-h-96" id="background-view">
+            <div
+              className="h-full w-full rounded-3xl bg-white dark:bg-gray-600 p-8 shadow-2xl text-white"
+              id="background-card"
+            >
               {children}
             </div>
           </div>
