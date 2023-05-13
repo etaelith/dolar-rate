@@ -1,7 +1,6 @@
 import "./globals.css";
 import {Instrument_Serif} from "next/font/google";
 
-import frontweb from "./frontweb.png";
 const instrumentSerif = Instrument_Serif({subsets: ["latin"], weight: ["400"]});
 
 export const metadata = {
@@ -15,8 +14,12 @@ export const metadata = {
   openGraph: {
     title: "ImagenTitle",
     description: "ImagenDescription",
-    images: frontweb,
+    images: "/frontweb.png",
+    width: 320,
+    height: 240,
+    alt: "My custom alt",
   },
+  type: "website",
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
