@@ -1,31 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dollar Rate
+
+This application is designed to display real-time Dollar quotations in Argentina. You can see the quotation of the Official Dollar, Dollar Bolsa, and Dollar Blue.
+
+## Requirements
+
+- Node.js
+- npm | yarn | pnpm
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/etaelith/dolar-rate.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, navigate to the project directory:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd dolar-rate
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install the dependencies with npm or yarn:
 
-## Learn More
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In the project directory, you can run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### `npm run dev` or `yarn dev` or `pnpm dev`
+
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits.
+
+### `npm run build` or `yarn build` or `pnpm build`
+
+Builds the app for production to the `build` folder.
+
+### `npm run start` or `yarn start` or `pnpm start`
+
+Runs the app in production mode. You should run `npm run build`, or `pnpm build` or `yarn build` before using this command.
+
+### `npm run lint` or `yarn lint` or `pnpm lint`
+
+Runs the linter on all project files.
+
+## Dependencies
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [ngrok](https://ngrok.com/)
+
+## Documentation
+
+To learn more about the technologies used in this project, you can check out the following documentation:
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [ESLint Documentation](https://eslint.org/docs/user-guide/getting-started)
+- [Prettier Documentation](https://prettier.io/docs/en/)
+- [ngrok Documentation](https://ngrok.com/docs)
+
+## Author
+
+- [Etaelith](https://github.com/etaelith)
+
+## License
+
+This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 ## Deploy on Vercel
 
