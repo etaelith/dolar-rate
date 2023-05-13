@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 
   keywords: ["React", "NextJS", "NextJS App", "Dolar", "Cotizacion", "Exchange"],
   openGraph: {
-    title: "ImagenEta",
-    description: "ImagenDescEta",
+    title: "Dolar Cotizaciones",
+    description: "Cotizacion actualizada del precio del Dolar Oficial, Dolar Bolsa, Dolar Blue",
     siteName: "https://dolar-rate.vercel.app/",
     images: [
       {
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
       },
     ],
     title: "Dolar Cotizaciones",
+    description: "Cotizacion actualizada del precio del Dolar Oficial, Dolar Bolsa, Dolar Blue",
   },
 };
 
