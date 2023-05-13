@@ -7,7 +7,14 @@ const instrumentSerif = Instrument_Serif({subsets: ["latin"], weight: ["400"]});
 export const metadata = {
   title: "Dolar Cotizaciones",
   description: "Exchange-rate, Dolar, Peso argentino",
+  authors: {
+    name: "Etaelith",
+    url: "https://github.com/etaelith",
+  },
+  creator: "Etaelith",
   openGraph: {
+    title: "ImagenTitle",
+    description: "ImagenDescription",
     images: frontweb,
   },
 };
