@@ -1,6 +1,8 @@
 "use client";
 
-function Left({value, onChange}: {value: number; onChange: (amount: number) => void}) {
+import React from "react";
+
+function Form({value, onChange}: {value: number; onChange: (amount: number) => void}) {
   return (
     <div className="flex flex-col gap-2">
       <label className="block text-sm font-medium " htmlFor="amountToExchange">
@@ -22,4 +24,4 @@ function Left({value, onChange}: {value: number; onChange: (amount: number) => v
   );
 }
 
-export default Left;
+export default Form;

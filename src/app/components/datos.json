@@ -1,0 +1,39 @@
+
+  {
+    "casa": {
+      "nombre": "Dolar Oficial",
+      "compra": "123.213",
+      "venta": "124"
+    },
+
+    "casa": {
+      "nombre": "Dolar Blue",
+      "compra": "123.213",
+      "venta": "124"
+    },
+
+    "casa": {
+      "nombre": "Dolar",
+      "compra": "123.213",
+      "venta": "124",
+    },
+
+    "casa": {
+      "nombre": "Dolar turista",
+      "compra": "123.213",
+      "venta": "124"
+    },
+  },
+
+
+data
+  .filter((cotizacion) =>
+    ["Dolar Oficial", "Dolar Bolsa", "Dolar turista", "Dolar", "Dolar Blue"].includes(
+      cotizacion.casa.nombre,
+    ),
+  )
+  .map((cotizacion) => ({
+    nombre: cotizacion.casa.nombre,
+    compra: cotizacion.casa.compra,
+    venta: cotizacion.casa.venta,
+  }));
