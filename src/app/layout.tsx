@@ -19,20 +19,14 @@ export const metadata: Metadata = {
     title: "Dolar Cotizaciones",
     description: "Cotizacion actualizada del precio del Dolar Oficial, Dolar Bolsa, Dolar Blue",
     siteName: "https://dolar-rate.vercel.app/",
-    images: [
-      {
-        url: "/opengraph-image.png",
-      },
-    ],
+    images: "/opengraph-image.png",
   },
   twitter: {
-    images: [
-      {
-        url: "/twitter-image.png",
-      },
-    ],
     title: "Dolar Cotizaciones",
     description: "Cotizacion actualizada del precio del Dolar Oficial, Dolar Bolsa, Dolar Blue",
+    creator: "@3taelith",
+    creatorId: "319303165",
+    images: ["/twitter-image.png"],
   },
 };
 
