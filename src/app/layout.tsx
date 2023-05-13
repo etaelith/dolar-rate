@@ -22,13 +22,15 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/opengraph-image.png",
-        width: 320,
-        height: 240,
       },
     ],
   },
   twitter: {
-    images: "/twitter.png",
+    images: [
+      {
+        url: "/twitter-image.png",
+      },
+    ],
     title: "Dolar Cotizaciones",
   },
 };
