@@ -1,9 +1,11 @@
 import "./globals.css";
+import type {Metadata} from "next";
+
 import {Instrument_Serif} from "next/font/google";
 
 const instrumentSerif = Instrument_Serif({subsets: ["latin"], weight: ["400"]});
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Dolar Cotizaciones",
   description: "Exchange-rate, Dolar, Peso argentino",
   authors: {
@@ -11,15 +13,24 @@ export const metadata = {
     url: "https://github.com/etaelith",
   },
   creator: "Etaelith",
+
+  keywords: ["React", "NextJS", "NextJS App", "Dolar", "Cotizacion", "Exchange"],
   openGraph: {
-    title: "ImagenTitle",
-    description: "ImagenDescription",
-    images: "/frontweb.png",
-    width: 320,
-    height: 240,
-    alt: "My custom alt",
+    title: "ImagenEta",
+    description: "ImagenDescEta",
+    siteName: "https://dolar-rate.vercel.app/",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 320,
+        height: 240,
+      },
+    ],
   },
-  type: "website",
+  twitter: {
+    images: "/twitter.png",
+    title: "Dolar Cotizaciones",
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
