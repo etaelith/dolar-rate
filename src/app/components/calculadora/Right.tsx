@@ -1,7 +1,7 @@
 import cotizaciones from "../../dolarCot.json";
 const COTIZACIONES = cotizaciones as Record<string, {compra: number; venta: number}>;
 
-function Right({amount}) {
+function Right({amount}: {amount: number}) {
   return (
     <ul className="flex flex-col gap-4">
       {Object.entries(COTIZACIONES).map(
