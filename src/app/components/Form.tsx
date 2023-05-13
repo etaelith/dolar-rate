@@ -5,7 +5,7 @@ import React from "react";
 function Form({value, onChange}: {value: number; onChange: (amount: number) => void}) {
   return (
     <div className="flex flex-col gap-2">
-      <label className="block text-sm font-medium " htmlFor="amountToExchange">
+      <label className="block text-sm font-bold tracking-widest" htmlFor="amountToExchange">
         Monto en ARS
       </label>
       <div className="flex ">
@@ -13,7 +13,7 @@ function Form({value, onChange}: {value: number; onChange: (amount: number) => v
           $
         </span>
         <input
-          className="rounded-none rounded-r-lg  border block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  text-right bg-placeholder"
+          className="rounded-none rounded-r-lg  border block flex-1 min-w-0 w-full text-lg border-gray-300 p-2.5  text-right bg-placeholder"
           id="amountToExchange"
           placeholder={`${value}`}
           type="number"
