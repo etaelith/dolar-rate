@@ -15,7 +15,6 @@
     "autoprefixer": "10.4.14",
     "eslint-config-next": "13.4.2",
     "next": "13.4.2",
-    "ngrok": "5.0.0-beta.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -25,8 +24,8 @@
   "devDependencies": {
     "@vercel/style-guide": "^4.0.2",
     "eslint": "8.40.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.8"
   }
